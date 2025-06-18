@@ -10,7 +10,7 @@ df = pd.read_csv("sensor.csv") #loading data
 df = df.drop_duplicates() #dropping duplicate rows 
 
 target_col = 'Fault Detected'
-df[target_col] = df[target_col].map({'Yes': 1, 'No': 0})
+
 
 df.drop(columns=[ #dropping unnecessary columns
     'Sensor_ID',
